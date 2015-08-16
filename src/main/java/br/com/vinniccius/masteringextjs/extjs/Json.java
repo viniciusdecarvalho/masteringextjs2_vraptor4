@@ -12,12 +12,6 @@ public interface Json extends View {
 
 	Json from(Object object);
 
-	Json include(String... names);
-	
-    Json exclude(String... names);
-    
-    Json excludeAll();
-
 	Json success();
 
 	Json success(boolean success);

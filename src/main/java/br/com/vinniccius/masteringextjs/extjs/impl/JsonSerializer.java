@@ -70,24 +70,6 @@ public class JsonSerializer implements Json {
 	}
 	
 	@Override
-	public Json include(String... names) {
-        serializer.include(names);
-        return this;
-    }
-	
-	@Override
-    public Json exclude(String... names) {
-        serializer.exclude(names);
-        return this;
-    }
-	
-	@Override
-	public Json excludeAll() {
-		serializer.excludeAll();
-        return this;
-    }
-
-	@Override
 	public Json serialize() {
 		serialization.withoutRoot().from(wrapper).recursive().serialize();
 		return this;
