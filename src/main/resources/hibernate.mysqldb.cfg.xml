@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>	
+	
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">none</property>
+ 		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sakila</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">stitecnologia</property>
+	
+		<mapping class="br.com.vinniccius.masteringextjs.model.DefaultModel" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.Actor" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.Address" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.Category" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.City" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.Country" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.Customer" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.Film" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.FilmActor" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.FilmActorPK" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.FilmCategory" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.FilmCategoryPK" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.FilmText" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.Group" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.Inventory" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.Language" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.Menu" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.Payment" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.Rental" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.Staff" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.Store" />
+		<mapping class="br.com.vinniccius.masteringextjs.model.User" />
+		
+	</session-factory>
+	
+</hibernate-configuration>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+	
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+ 		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect </property>
+		<property name="hibernate.connection.url">jdbc:postgresql://ec2-54-163-235-165.compute-1.amazonaws.com:5432/d32rg8ctr3forg</property>
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.username">ajmmhgkldngnad</property>
+		<property name="hibernate.connection.password">AfunrTxnpq_Rikuc404xii4O-b</property>
+	
+		<property name="hibernate.c3p0.min_size">1</property> 
+		<property name="hibernate.c3p0.max_size">20</property> 
+		<property name="hibernate.c3p0.timeout">300</property> 
+		<property name="hibernate.c3p0.max_statements">50</property> 
+		<property name="hibernate.c3p0.idle_test_period">3000</property>
+		 
+		<mapping class="br.edu.ftlf.ads.revenda.model.Model" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Aquisicao" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.AquisicaoPagamento" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Cliente" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Contato" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Endereco" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.FormaPagamento" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Fornecedor" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Funcionario" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Usuario" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Gasto" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Pagamento" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Veiculo" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Venda" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.VendaPagamento" />
+		
+	</session-factory>
+	
+</hibernate-configuration>
